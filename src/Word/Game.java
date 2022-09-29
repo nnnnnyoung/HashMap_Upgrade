@@ -35,15 +35,11 @@ public class Game {
 			
 			int Star1=(int)(Math.random()*W.getwList().get(word[num]).mean.length());
 			int Star2=(int)(Math.random()*W.getwList().get(word[num]).mean.length());
-			for(;;) {
-				if(Star2==Star1) {
-					Star2=(int)(Math.random()*W.getwList().get(word[num]).mean.length());
-				}else {
-					break;
-				}
+			
+			while(Star2==Star1) {
+				Star2=(int)(Math.random()*W.getwList().get(word[num]).mean.length());
 			}
-			System.out.println(Star1);
-			System.out.println(Star2);
+
 		//	System.out.println(W.getwList().get(word[num]).mean); //랜덤한 숫자를 word의 인덱스값으로 활용, 랜덤으로 문제가 출력된다.
 			
 			for(int j=0; j<W.getwList().get(word[num]).mean.length(); j++) {

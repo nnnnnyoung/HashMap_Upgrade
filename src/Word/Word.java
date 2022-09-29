@@ -21,7 +21,21 @@ public class Word {
 		ValueType v=new ValueType();
 		v.info="동사";v.level="중";v.mean="피로해지다";
 		wList.put("tire", v);
-
+		v=new ValueType();
+		v.info="명사";v.level="하";v.mean="인도";
+		wList.put("india", v);
+		v=new ValueType();
+		v.info="명사";v.level="하";v.mean="개";
+		wList.put("dog", v);
+		v=new ValueType();
+		v.info="명사";v.level="중";v.mean="고양이";
+		wList.put("cat", v);
+		v=new ValueType();
+		v.info="명사";v.level="하";v.mean="달걀";
+		wList.put("egg", v);
+		v=new ValueType();
+		v.info="명사";v.level="상";v.mean="물고기";
+		wList.put("fish", v);
 	}
 	
 	
